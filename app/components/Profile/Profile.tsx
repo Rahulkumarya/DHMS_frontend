@@ -8,6 +8,7 @@ import ProfileInfo from './ProfileInfo';
 
 type Props = {
     user:any;
+    avatar:any;
 };
 
 const Profile: FC<Props> = ({user}) => {
