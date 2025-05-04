@@ -7,11 +7,11 @@ import Heading from "../utils/Heading";
 import Profile from "../components/Profile/Profile";
 import { useSelector } from "react-redux";
 
-type Props= {
-  avatar:string |null;
-}
+// type Props= {
+//   avatar:string |null;
+// }
 
-const Page: FC<Props> = ({avatar}) => {
+const Page = () => {
   const [open, setOpen] = useState(false);
   const [activeItem, setActiveItem] = useState(0);
   const [route, setRoute] = useState("Login");
@@ -34,7 +34,7 @@ const Page: FC<Props> = ({avatar}) => {
           setRoute={setRoute}
           route={route}
         />
-        <Profile user={user} avatar={avatar}/>
+        <Profile user={user} avatar={user?.avatar || null}/>
       </Protected>
     </>
   );
