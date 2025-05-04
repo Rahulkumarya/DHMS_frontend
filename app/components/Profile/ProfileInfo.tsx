@@ -1,10 +1,15 @@
+"use client"
 import React, { FC, useEffect, useState } from 'react';
+
+
 import { styles } from "../../../app/styles/Style";
 import Image from 'next/image';
 import { AiOutlineCamera } from 'react-icons/ai';
 import avatarIcons from "../../../public/assests/avatar.jpeg";
-import { useUpdateAvatarMutation } from '@/redux/features/user/userApi';
-import { useLoadUserQuery } from '@/redux/features/api/apiSlice';
+import { useActivationMutation} from "../../../redux/features/auth/authApi";
+// import useUpdateAvatarMutaion from "../../../redux/features/auth/authApi"
+
+import { useLoadUserQuery } from '../../../redux/features/api/apiSlice';
 
 type Props = {
   avatar: string | null;
@@ -113,3 +118,7 @@ const ProfileInfo: FC<Props> = ({ user, avatar }) => {
 };
 
 export default ProfileInfo;
+function useUpdateAvatarMutation(): [any, { isSuccess: any; error: any; }] {
+  throw new Error('Function not implemented.');
+}
+
