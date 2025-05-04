@@ -34,7 +34,7 @@ const Page: FC<Props> = ({avatar}) => {
           setRoute={setRoute}
           route={route}
         />
-        <Profile user={user} avatar={user?.avatar || null}/>
+        <Profile user={user} avatar={avatar}/>
       </Protected>
     </>
   );
