@@ -4,11 +4,9 @@ import AmbulaceCard from './Detail/AmbulaceCard'
 import NavServices from '../utils/NavServices'
 import Header from '../components/Header'
 
-interface Props {
-    
-}
 
-const page = (props: Props) => {
+
+const page = () => {
     return (
     
         <div className='flex flex-col items-center justify-center h-screen text-black'>
