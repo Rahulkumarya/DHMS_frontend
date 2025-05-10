@@ -47,7 +47,7 @@ export default function RootLayout({
     <html lang="en">
 
     {/* dark mode logic in here  */}
-      <body className={`${poppins.variable} ${josefin.variable} !bg-white bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300`}>
+      <body className={`${poppins.variable} ${josefin.variable} !bg-white bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300 `}>
        <Providers>
         <SessionProvider>
        <ThemeProvider attribute='class'defaultTheme='system' enableSystem>

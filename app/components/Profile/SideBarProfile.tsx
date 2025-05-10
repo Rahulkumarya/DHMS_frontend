@@ -3,7 +3,7 @@ import Image from "next/image";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { SiCoursera } from "react-icons/si";
 import { AiOutlineLogout } from "react-icons/ai";
-import avatarDefault from "../../../public/assests/avatar.jpeg";
+import avatarDefault from "../../../public/assests/avatar.png";
 
 
 type Props = {
