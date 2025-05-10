@@ -238,7 +238,7 @@ const Page: FC = () => {
         route={route}
       />
 
-      <NavServices />
+      <NavServices activeItem={0} isMobile={false} />
       <AutoSliderCards />
       {showHospital && <HospitalServices />}
 
